@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cent | Projects</title>
+  <link rel="stylesheet" href="style.css"/>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&family=JetBrains+Mono:wght@300;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="scanlines"></div>
+
+  <!-- NAV -->
+  <header class="hud-nav">
+    <h2 class="logo">CENT//SYS</h2>
+    <nav>
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="projects.html">Projects</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container section">
+    <h1 class="section-title glitch-text" data-text="PROJECTS">
+      PROJECTS
+    </h1>
+
+    <div class="grid">
+
+      <div class="cyber-card project-card" onclick="openModal('YOLOv7 Handsign Recognition')">
+        <h3>Handsign Recognition</h3>
+        <p>YOLOv7-based gesture detection system.</p>
+      </div>
+
+      <div class="cyber-card project-card" onclick="openModal('Object Detection System')">
+        <h3>Object Detection</h3>
+        <p>Advanced detection pipeline using YOLOv7.</p>
+      </div>
+
+      <div class="cyber-card project-card" onclick="openModal('Docker Photo Storage Website')">
+        <h3>Docker Photo Storage</h3>
+        <p>Photo archive web system containerized with Docker.</p>
+      </div>
+
+      <div class="cyber-card project-card" onclick="openModal('Data Mining & Cleaning')">
+        <h3>Data Mining</h3>
+        <p>Cleaning, preprocessing, and mining datasets.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAL TERMINAL -->
+  <div id="modal" class="terminal-modal">
+    <div class="terminal-box cyber-card terminal">
+      <h3 id="modalTitle">Project</h3>
+      <p>> Initializing project data...</p>
+      <p>> Loading modules...</p>
+      <p>> Access granted.</p>
+      <p class="cursor-line">> Awaiting input<span class="cursor">█</span></p>
+
+      <button class="cyber-btn outline-btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>PROJECT DATABASE ONLINE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

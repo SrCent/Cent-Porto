@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cent - Full Stack Developer Portfolio. Cyberpunk themed portfolio showcasing projects in AI, Computer Vision, and Web Development.">
+    <title>CENT // FULL_STACK.DEV</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scanline overlay -->
+    <div class="scanline-overlay"></div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prefix">&gt;</span>
+                <span class="cyber-glitch">CENT.DEV</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">ABOUT</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#contact" class="nav-link nav-link-cta">CONNECT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with HUD -->
+    <section id="hero" class="hero">
+        <div class="circuit-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="terminal-prefix">&gt;</span>
+                    <span class="typewriter">SYSTEM.INITIALIZED</span>
+                    <span class="blink-cursor">_</span>
+                </div>
+                <h1 class="hero-title cyber-glitch-anim">
+                    CENT
+                </h1>
+                <h2 class="hero-subtitle">
+                    FULL STACK DEVELOPER
+                </h2>
+                <p class="hero-description">
+                    <span class="terminal-prefix">$</span> Semester 6 Teknik Informatika | Building the future with Python, Docker, and AI
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary cyber-glitch-btn">
+                        VIEW_PROJECTS.EXE
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        CONTACT_ME
+                    </a>
+                </div>
+            </div>
+
+            <!-- HUD Stats Panel -->
+            <div class="hud-panel">
+                <div class="hud-header">
+                    <div class="terminal-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="hud-title">SYSTEM.STATUS</span>
+                </div>
+                <div class="hud-content">
+                    <div class="stat-item">
+                        <div class="stat-label">SEMESTER</div>
+                        <div class="stat-value" data-value="6">0</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-width="100"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">PROJECTS</div>
+                        <div class="stat-value" data-value="4">0</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">SKILLS</div>
+                        <div class="stat-value" data-value="6">0</div>
+                        <div class="stat-bar">
+                            <div class="stat-bar-fill" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-label">STATUS</div>
+                        <div class="stat-value stat-online">ONLINE</div>
+                        <div class="pulse-indicator"></div>
+                    </div>
+                </div>
+                <div class="hud-footer">
+                    <span class="terminal-prefix">&gt;</span>
+                    <span id="system-time">00:00:00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="terminal-prefix">&gt;&gt;</span>
+                    ABOUT.SYS
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card card-terminal">
+                    <div class="card-glow"></div>
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="terminal-title">profile.info</span>
+                    </div>
+                    <div class="about-content">
+                        <div class="profile-image-placeholder">
+                            <div class="profile-border"></div>
+                            <div class="profile-text">
+                                <span class="cyber-glitch">CENT</span>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                <span class="terminal-prefix">&gt;</span> Full Stack Developer dengan fokus pada AI dan Computer Vision. Mahasiswa Teknik Informatika semester 6 yang passionate dalam membangun solusi teknologi inovatif.
+                            </p>
+                            <p>
+                                <span class="terminal-prefix">&gt;</span> Specialized in Machine Learning, Object Detection, dan Web Development. Berpengalaman dalam mengimplementasikan YOLOv7 untuk real-time detection systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m16 16 4-4-4-4"/>
+                                <path d="m8 8-4 4 4 4"/>
+                                <path d="M12 3v18"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">6+</div>
+                        <div class="stat-text">Tech Stack</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <path d="M9 3v18"/>
+                                <path d="m16 15-3-3 3-3"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">4+</div>
+                        <div class="stat-text">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                                <path d="M2 12h20"/>
+                            </svg>
+                        </div>
+                        <div class="stat-number">AI</div>
+                        <div class="stat-text">Specialist</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="terminal-prefix">&gt;&gt;</span>
+                    SKILLS.STACK
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M3 3h18v18H3z"/>
+                            <path d="M12 3v18"/>
+                            <path d="M3 9h18"/>
+                            <path d="M3 15h18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">PYTHON</h3>
+                    <p class="skill-desc">Machine Learning, Data Processing, Backend Development</p>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" data-level="90"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="6"/>
+                            <circle cx="12" cy="12" r="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">MYSQL</h3>
+                    <p class="skill-desc">Database Design, Query Optimization, Data Management</p>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" data-level="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="4" y="4" width="16" height="16" rx="2"/>
+                            <rect x="8" y="8" width="8" height="8"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">DOCKER</h3>
+                    <p class="skill-desc">Containerization, Deployment, DevOps Workflow</p>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" data-level="80"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+                            <polyline points="2 17 12 22 22 17"/>
+                            <polyline points="2 12 12 17 22 12"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">PHP</h3>
+                    <p class="skill-desc">Server-side Scripting, Web Applications, Backend Logic</p>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" data-level="85"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="7.5 4.21 12 6.81 16.5 4.21"/>
+                            <polyline points="7.5 19.79 7.5 14.6 3 12"/>
+                            <polyline points="21 12 16.5 14.6 16.5 19.79"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">CSS</h3>
+                    <p class="skill-desc">Responsive Design, Animations, Modern Layouts</p>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" data-level="88"></div>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="m16 16 4-4-4-4"/>
+                            <path d="m8 8-4 4 4 4"/>
+                            <path d="M12 3v18"/>
+                        </svg>
+                    </div>
+                    <h3 class="skill-name">JAVASCRIPT</h3>
+                    <p class="skill-desc">Vanilla JS, DOM Manipulation, Interactive UIs</p>
+                    <div class="skill-level">
+                        <div class="skill-level-bar" data-level="87"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="terminal-prefix">&gt;&gt;</span>
+                    PROJECTS.LOG
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                                <path d="M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="project-title">HANDSIGN_RECOGNITION</h3>
+                        <p class="project-desc">
+                            <span class="terminal-prefix">&gt;</span> Real-time hand gesture recognition system using YOLOv7 deep learning architecture. Achieved high accuracy in detecting and classifying various hand signs.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">YOLOV7</span>
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">COMPUTER_VISION</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date">2024</span>
+                        <div class="project-links">
+                            <a href="#" class="project-link">VIEW_MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <circle cx="8.5" cy="8.5" r="1.5"/>
+                                <path d="M21 15l-5-5L5 21"/>
+                            </svg>
+                        </div>
+                        <h3 class="project-title">DOCKER_IMAGE_STORAGE</h3>
+                        <p class="project-desc">
+                            <span class="terminal-prefix">&gt;</span> Containerized web application for efficient image storage and management. Built with Docker for seamless deployment and scalability.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">DOCKER</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MYSQL</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date">2024</span>
+                        <div class="project-links">
+                            <a href="#" class="project-link">VIEW_MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <h3 class="project-title">OBJECT_DETECTION_V7</h3>
+                        <p class="project-desc">
+                            <span class="terminal-prefix">&gt;</span> Advanced object detection system utilizing YOLOv7 for real-time multi-object recognition and tracking with high precision performance.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">YOLOV7</span>
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date">2024</span>
+                        <div class="project-links">
+                            <a href="#" class="project-link">VIEW_MORE</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="terminal-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <span class="project-status">ACTIVE</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M3 3h18v18H3z"/>
+                                <path d="M12 8v8"/>
+                                <path d="M8 12h8"/>
+                            </svg>
+                        </div>
+                        <h3 class="project-title">DATA_PROCESSING</h3>
+                        <p class="project-desc">
+                            <span class="terminal-prefix">&gt;</span> Comprehensive data cleaning and mining pipeline. Processing large datasets with advanced algorithms for pattern extraction and insights.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">PYTHON</span>
+                            <span class="tag">DATA_MINING</span>
+                            <span class="tag">ANALYTICS</span>
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-date">2024</span>
+                        <div class="project-links">
+                            <a href="#" class="project-link">VIEW_MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="terminal-prefix">&gt;&gt;</span>
+                    CONTACT.EXE
+                </h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="contact-title">
+                        <span class="terminal-prefix">&gt;</span> LET'S BUILD SOMETHING TOGETHER
+                    </h3>
+                    <p class="contact-desc">
+                        Interested in collaboration or have a project in mind? Feel free to reach out through any of these channels.
+                    </p>
+                    <div class="contact-methods">
+                        <a href="mailto:cent@example.com" class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">EMAIL</div>
+                                <div class="method-value">cent@example.com</div>
+                            </div>
+                        </a>
+                        <a href="https://github.com/cent" target="_blank" class="contact-method">
+                            <div class="method-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"/>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <div class="method-label">GITHUB</div>
+                                <div class="method-value">github.com/cent</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <div class="cta-content">
+                            <div class="cta-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <path d="M14 2v6h6"/>
+                                    <path d="M16 13H8"/>
+                                    <path d="M16 17H8"/>
+                                    <path d="M10 9H8"/>
+                                </svg>
+                            </div>
+                            <h4 class="cta-title">DOWNLOAD CV</h4>
+                            <p class="cta-desc">Get my complete resume and work history</p>
+                            <a href="#" class="btn btn-primary btn-download" download>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                    <polyline points="7 10 12 15 17 10"/>
+                                    <line x1="12" y1="15" x2="12" y2="3"/>
+                                </svg>
+                                DOWNLOAD.PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="terminal-prefix">&gt;</span>
+                        <span class="cyber-glitch">CENT.DEV</span>
+                    </div>
+                    <p class="footer-text">
+                        <span class="terminal-prefix">$</span> Building the future, one line of code at a time.
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-links">
+                        <a href="#about" class="footer-link">ABOUT</a>
+                        <a href="#skills" class="footer-link">SKILLS</a>
+                        <a href="#projects" class="footer-link">PROJECTS</a>
+                        <a href="#contact" class="footer-link">CONTACT</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="mailto:cent@example.com" class="social-link" aria-label="Email">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/cent" target="_blank" class="social-link" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                                <path d="M9 18c-4.51 2-5-2-7-2"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <p class="footer-copyright">
+                    <span class="terminal-prefix">&gt;</span> &copy; 2024 CENT.DEV // ALL_RIGHTS_RESERVED
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
